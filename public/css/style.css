@@ -369,6 +369,7 @@ input::placeholder,
   align-items: center;
   gap: 50px;
   flex-wrap: wrap;
+  display: none;
 }
 .add-form-info p {
   font-size: 14px;
