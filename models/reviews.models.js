@@ -31,8 +31,8 @@ const reviews = [
     id: "d0bd7266-8fea-40e2-9341-61e27f690f9e",
     name: "Emily Watson",
     rating: "5",
-    description:
-      "This site is a lifesaver! As a student on a tight budget, finding reduced prices on everyday essentials has been a blessing. The navigation is smooth, and the variety of products is impressive. Highly recommended!",
+    description: "This site is a lifesaver! As a student on a tight budget, finding reduced prices on everyday essentials has been a blessing."
+      // "This site is a lifesaver! As a student on a tight budget, finding reduced prices on everyday essentials has been a blessing. The navigation is smooth, and the variety of products is impressive. Highly recommended!",
   },
   {
     id: "d0bd7266-8fea-40e2-9341-61e27f690f9f",
@@ -43,9 +43,9 @@ const reviews = [
   },
 ];
 
-let reviews_list = reviews.slice(0, 6).reverse();
+const getReviewsList = () => reviews.slice(-6).reverse();
 
 module.exports = {
   reviews,
-  reviews_list,
+  getReviewsList,
 };

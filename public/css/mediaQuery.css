@@ -42,8 +42,12 @@
   .reviews {
     padding-inline: 25px;
   }
+  .review-heads{
+    text-align: center;
+  }
   .reviews-form {
-    padding: 25px;}
+    padding: 25px;
+  }
 
   /* Handle add form */
   .add-form {
@@ -61,7 +65,6 @@
   .footer-links-wrapper {
     justify-content: center;
   }
-
 }
 
 @media screen and (max-width: 600px) {

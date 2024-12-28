@@ -293,6 +293,7 @@ input::placeholder,
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   place-items: center;
   gap: 20px;
+  align-items: stretch;
 }
 .comment {
   padding: 25px;
@@ -302,6 +303,10 @@ input::placeholder,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 400ms ease;
+}
+.comment:hover {
+  transform: scale(1.03); 
 }
 .comment-text {
   margin-block: 20px;
