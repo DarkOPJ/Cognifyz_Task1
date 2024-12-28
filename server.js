@@ -5,6 +5,7 @@ const {countriesRouter} = require('./routes/countries.router')
 const {productRouter} = require('./routes/products.router')
 const {reviewsRouter} = require('./routes/reviews.router')
 const {products} = require('./models/products.models')
+const {reviews_list} = require('./models/reviews.models')
 
 const PORT = 3000
 
@@ -12,6 +13,7 @@ const app = express()
 
 app.set('view engine', 'ejs')
 
+app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
 app.use(express.json())
 
 app.use(express.static('public'))
@@ -26,7 +28,8 @@ app.use((req, res, next) => {
 app.get('/', (req, res) => {
     res.render('index', {
         title: 'Task 1',
-        products
+        products,
+        reviews: reviews_list
     })
 })
 

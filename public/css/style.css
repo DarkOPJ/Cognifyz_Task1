@@ -299,7 +299,6 @@ input::placeholder,
   border-radius: 30px;
   background-color: #0e3d2a2a;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.164);
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -315,8 +314,10 @@ input::placeholder,
 .profile-id p {
   font-size: 16px;
 }
-.reviews-form {
+.reviews-form{
   padding: 40px;
+}
+.reviews-form-container {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -329,12 +330,29 @@ input::placeholder,
   font-size: 30px;
   color: gray;
 }
+.review-stars{
+  font-size: 15px;
+  color: gray;
+}
 .rating-star{
   cursor: pointer;
   transition: color 0.3s ease;
 }
+.rating-star.hovered {
+  color: rgb(243, 199, 116); /* Lighter color for hovered stars */
+}
 .review-description-label {
   margin-bottom: 10px;
+}
+.review-submit{
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #fff;
+  color: black;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #16194f;
 }
 
 
