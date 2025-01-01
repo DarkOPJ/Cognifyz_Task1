@@ -26,7 +26,7 @@ app.use((req, res, next) => {
 
 app.get('/', (req, res) => {
     res.render('index', {
-        title: 'Task 1',
+        title: 'ShopSavvy',
         products,
         reviews: getReviewsList(),
     })
