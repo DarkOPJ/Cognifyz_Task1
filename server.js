@@ -24,6 +24,7 @@ app.use((req, res, next) => {
     console.log(req.method + " " + req.baseUrl + " " + delta +"ms")
 })
 
+// Home
 app.get('/', (req, res) => {
     res.render('index', {
         title: 'ShopSavvy',

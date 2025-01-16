@@ -20,7 +20,7 @@ function addReview(req, res) {
     description,
   };
   reviews.push(newReview);
-  res.redirect("/");
+  res.redirect("/#reviewScroll");
 }
 
 module.exports = {
